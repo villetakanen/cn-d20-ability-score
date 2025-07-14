@@ -5,12 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="/node_modules/@11thdeg/cyan-next/dist/style.css" />
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <script type="module" src="/src/cn-d20-ability-score.ts"></script>
+
   </head>
   <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
+    <main>
+      <div class="flex">
+        <cn-d20-ability-score></cn-d20-ability-score>
+        <cn-d20-ability-score interactive></cn-d20-ability-score>
+      </div>
+    </main>
   </body>
 </html>
